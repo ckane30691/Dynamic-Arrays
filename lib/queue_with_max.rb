@@ -27,7 +27,7 @@ class QueueWithMax
 
   def dequeue
     val = @store.pop
-    getNewMax if @max = val
+    getNewMax if @max == val
     val
   end
 
